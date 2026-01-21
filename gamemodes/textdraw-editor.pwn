@@ -165,6 +165,7 @@ main()
     printf("\t|  Coding:                      |");
     printf("\t|                               |");
     printf("\t|  Burak (Nexor)                |");
+    printf("\t|  mateus-bsod                  |");
     printf("\t|                               |");
     printf("\t|  Loaded Date:                 |");
     printf("\t|                               |");
@@ -175,9 +176,6 @@ main()
     printf("\t|  github.com/mateus-bsod       |");
     printf("\t|  Old: github.com/nexquery     |");
     printf("\t|                               |");
-    printf("\t|  Discord:                     |");
-    printf("\t|                               |");
-    printf("\t|  Nexor#4730                   |");
     printf("\t|                               |");
     printf("\t=================================\n");
 }
