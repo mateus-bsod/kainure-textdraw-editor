@@ -1,0 +1,194 @@
+####################################################################################################
+
+const Textdraw: Text_Player[][] = Array.from({ length: MAX_PLAYERS }, () => new Array<number>(18).fill(-1));
+
+Text_Player[playerid][0] = Native.CreatePlayerTextDraw(playerid, 80.000, 165.000, "Font 0");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][0], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][0], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][0], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][0], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][0], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][0], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][0], 0);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][0], 1);
+
+Text_Player[playerid][1] = Native.CreatePlayerTextDraw(playerid, 80.000, 195.000, "Font 1");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][1], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][1], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][1], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][1], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][1], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][1], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][1], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][1], 1);
+
+Text_Player[playerid][2] = Native.CreatePlayerTextDraw(playerid, 80.000, 225.000, "Font 2");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][2], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][2], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][2], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][2], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][2], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][2], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][2], 2);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][2], 1);
+
+Text_Player[playerid][3] = Native.CreatePlayerTextDraw(playerid, 80.000, 255.000, "Font 3");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][3], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][3], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][3], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][3], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][3], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][3], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][3], 3);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][3], 1);
+
+Text_Player[playerid][4] = Native.CreatePlayerTextDraw(playerid, 80.000, 285.000, "LD_SPAC:white");
+Native.PlayerTextDrawTextSize(playerid, Text_Player[playerid][4], 35.000, 40.000);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][4], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][4], 16711760);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][4], 0);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][4], 0);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][4], 255);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][4], 4);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][4], 1);
+
+Text_Player[playerid][5] = Native.CreatePlayerTextDraw(playerid, 150.000, 160.000, "_");
+Native.PlayerTextDrawTextSize(playerid, Text_Player[playerid][5], 65.000, 80.000);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][5], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][5], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][5], 0);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][5], 0);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][5], 85);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][5], 5);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][5], 0);
+Native.PlayerTextDrawSetPreviewModel(playerid, Text_Player[playerid][5], 289);
+Native.PlayerTextDrawSetPreviewRot(playerid, Text_Player[playerid][5], 0.000, 0.000, 0.000, 1.000);
+Native.PlayerTextDrawSetPreviewVehCol(playerid, Text_Player[playerid][5], 0, 0);
+
+Text_Player[playerid][6] = Native.CreatePlayerTextDraw(playerid, 145.000, 228.000, "_");
+Native.PlayerTextDrawTextSize(playerid, Text_Player[playerid][6], 90.000, 90.000);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][6], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][6], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][6], 0);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][6], 0);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][6], 0);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][6], 5);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][6], 0);
+Native.PlayerTextDrawSetPreviewModel(playerid, Text_Player[playerid][6], 411);
+Native.PlayerTextDrawSetPreviewRot(playerid, Text_Player[playerid][6], -8.000, 0.000, -40.000, 1.000);
+Native.PlayerTextDrawSetPreviewVehCol(playerid, Text_Player[playerid][6], 17, 0);
+
+Text_Player[playerid][7] = Native.CreatePlayerTextDraw(playerid, 250.000, 165.000, "Alignment: Left");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][7], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][7], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][7], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][7], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][7], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][7], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][7], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][7], 1);
+
+Text_Player[playerid][8] = Native.CreatePlayerTextDraw(playerid, 295.000, 195.000, "Alignment: Center");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][8], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][8], 2);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][8], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][8], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][8], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][8], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][8], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][8], 1);
+
+Text_Player[playerid][9] = Native.CreatePlayerTextDraw(playerid, 333.500, 225.000, "Alignment: Right");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][9], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][9], 3);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][9], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][9], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][9], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][9], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][9], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][9], 1);
+
+Text_Player[playerid][10] = Native.CreatePlayerTextDraw(playerid, 355.000, 165.000, "Proportion: On");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][10], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][10], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][10], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][10], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][10], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][10], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][10], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][10], 1);
+
+Text_Player[playerid][11] = Native.CreatePlayerTextDraw(playerid, 355.000, 195.000, "Proportion: Off");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][11], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][11], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][11], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][11], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][11], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][11], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][11], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][11], 0);
+
+Text_Player[playerid][12] = Native.CreatePlayerTextDraw(playerid, 355.000, 225.000, "Shadow");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][12], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][12], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][12], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][12], -1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][12], 0);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][12], -12254977);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][12], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][12], 1);
+
+Text_Player[playerid][13] = Native.CreatePlayerTextDraw(playerid, 405.000, 225.000, "Outline");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][13], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][13], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][13], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][13], 0);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][13], 5);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][13], 1784335871);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][13], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][13], 1);
+
+Text_Player[playerid][14] = Native.CreatePlayerTextDraw(playerid, 340.000, 265.000, "Box + BoxColor");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][14], 0.300, 1.500);
+Native.PlayerTextDrawTextSize(playerid, Text_Player[playerid][14], 0.000, 200.000);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][14], 2);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][14], -1);
+Native.PlayerTextDrawUseBox(playerid, Text_Player[playerid][14], 1);
+Native.PlayerTextDrawBoxColor(playerid, Text_Player[playerid][14], -5963676);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][14], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][14], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][14], 150);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][14], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][14], 1);
+
+Text_Player[playerid][15] = Native.CreatePlayerTextDraw(playerid, 480.000, 165.000, "Global");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][15], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][15], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][15], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][15], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][15], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][15], 16711710);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][15], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][15], 1);
+
+Text_Player[playerid][16] = Native.CreatePlayerTextDraw(playerid, 480.000, 195.000, "Player");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][16], 0.300, 1.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][16], 1);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][16], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][16], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][16], 1);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][16], 16711710);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][16], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][16], 1);
+Native.PlayerTextDrawSetSelectable(playerid, Text_Player[playerid][16], 1);
+
+Text_Player[playerid][17] = Native.CreatePlayerTextDraw(playerid, 310.000, 80.000, "Textdraw Editor 1.5");
+Native.PlayerTextDrawLetterSize(playerid, Text_Player[playerid][17], 0.400, 2.500);
+Native.PlayerTextDrawAlignment(playerid, Text_Player[playerid][17], 2);
+Native.PlayerTextDrawColor(playerid, Text_Player[playerid][17], -1);
+Native.PlayerTextDrawSetShadow(playerid, Text_Player[playerid][17], 1);
+Native.PlayerTextDrawSetOutline(playerid, Text_Player[playerid][17], 2);
+Native.PlayerTextDrawBackgroundColor(playerid, Text_Player[playerid][17], 1088475181);
+Native.PlayerTextDrawFont(playerid, Text_Player[playerid][17], 1);
+Native.PlayerTextDrawSetProportional(playerid, Text_Player[playerid][17], 1);
+
