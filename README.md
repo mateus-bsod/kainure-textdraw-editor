@@ -55,6 +55,7 @@ All icons used in this project are from [Icons8](https://icons8.com/)
 |                     Credits                     | Plugin / Include |                       Link                        |
 |-------------------------------------------------|------------------|---------------------------------------------------|
 | [Nexor](https://github.com/nexquery)            | This Project     | https://github.com/nexquery/samp-textdraw-editor  |
+| [0x5f3759df](https://github.com/mateus-bsod)         | Port for Kainure | https://github.com/mateus-bsod                    |
 | [Y_Less](https://github.com/Y-Less)             | YSI Library      | https://github.com/pawn-lang/YSI-Includes         |
 | [Y_Less](https://github.com/Y-Less)             | Sscanf           | https://github.com/Y-Less/sscanf                  |
 | [Zeex](https://github.com/Zeex)                 | CrashDetect      | https://github.com/Zeex/samp-plugin-crashdetect   |
